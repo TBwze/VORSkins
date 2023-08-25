@@ -1,0 +1,1217 @@
+html, body {
+    margin: 0;
+    max-width: 100%;
+    font-family: 'Inter', sans-serif;
+    overflow-x: hidden;
+}
+
+a {
+    cursor: pointer;
+}
+
+/* Navbar */
+.Header {
+    margin-top: -2%;
+    background-color: #FF9B9B;
+    width: 100%;
+    height: 150px;
+}
+h1.BrandTitle {
+    text-align: center;
+    color: white;
+    padding-top: 25px;
+    margin-top: 30px;
+    margin-bottom: 0;
+    font-size: 50px;
+}
+a.Home {
+    position: absolute;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+    padding: 19px 0;
+    width: 384px;
+}
+a.Home::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 5px;
+    bottom: 5px;
+    background-color: #ff5555;
+    left: 0%;
+    transition: 0.3s;
+}
+a.Home:hover::after {
+    width: 100%;
+}
+a.Home:hover {
+    opacity: 0.7;
+}
+a.About {
+    position: absolute;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+    padding: 19px 0;
+    width: 384px;
+    left: 384px;
+}
+a.About::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 5px;
+    bottom: 5px;
+    background-color: #ff5555;
+    left: 0%;
+    transition: 0.3s;
+}
+a.About:hover::after {
+    width: 100%;
+}
+a.About:hover {
+    opacity: 0.7;
+}
+a.Product {
+    position: absolute;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+    padding: 19px 0;
+    width: 384px;
+    left: 768px;
+}
+a.Product::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 5px;
+    bottom: 5px;
+    background-color: #ff5555;
+    left: 0%;
+    transition: 0.3s;
+}
+a.Product:hover::after {
+    width: 100%;
+}
+a.Product:hover {
+    opacity: 0.7;
+}
+a.Promotion {
+    position: absolute;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+    padding: 19px 0;
+    width: 384px;
+    left: 1152px;
+}
+a.Promotion::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 5px;
+    bottom: 5px;
+    background-color: #ff5555;
+    left: 0%;
+    transition: 0.3s;
+}  
+a.Promotion:hover::after {
+    width: 100%;
+}
+a.Promotion:hover {
+    opacity: 0.7;
+}
+a.Subscribe {
+    position: absolute;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+    padding: 19px 0;
+    width: 384px;
+    left: 1536px;
+}
+a.Subscribe::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 5px;
+    bottom: 5px;
+    background-color: #ff5555;
+    left: 0%;
+    transition: 0.3s;
+}
+a.Subscribe:hover::after {
+    width: 100%;
+}
+a.Subscribe:hover {
+    opacity: 0.7;
+}
+
+/* Home */
+.Banner {
+    position: absolute;
+    top: 15.2%;
+    margin: 0;
+    width: 100%;
+    height: 263px;
+    background-repeat: no-repeat;
+}
+
+.LatestProductText {
+    position: absolute;
+    font-size: 30px;
+    left: 45%;
+    top: 41%;
+}
+
+.LatestProductContainer {
+    position: absolute;
+    left: 24%;
+    top: 49%;
+    width: 1000px;
+    height: 125px;
+}
+
+.LatestProducts {
+    border: 3px solid #FF9B9B;
+    background-color: #FFBEBE;
+    width: 125px;
+    height: 125px;
+    margin: 0 5.7%;
+}
+
+.LatestProductCleanserContainer {
+    position: absolute;
+    border: 3px solid #FF9B9B;
+    background-color: #FFBEBE;
+    width: 125px;
+    height: 125px;
+    margin: 0 5.7%;
+    top: 0%;
+    left: 75%;
+}
+
+.LatestProductCleanser {
+    width: 70px;
+    height: 125px;
+    margin-left: 22%;
+    margin-top: 5%;
+}
+
+.BestSellerText {
+    position: absolute;
+    font-size: 30px;
+    left: 46%;
+    top: 60.5%;
+}
+
+.BestSellerContainer {
+    position: absolute;
+    left: 24%;
+    top: 68%;
+    width: 1000px;
+    height: 125px;
+}
+
+.BestSellers {
+    border: 3px solid #FF9B9B;
+    background-color: #FFBEBE;
+    width: 125px;
+    height: 125px;
+    margin-left: 5.5%;
+    margin-right: 31%;
+}
+
+.BestSellerDesc1 {
+    position: absolute;
+    word-wrap: break-word;
+    text-align: center;
+    border: 3px solid #FF9B9B;
+    padding-top: 30px;
+    top: -13%;
+    left: 18.3%;
+    width: 250px;
+    height: 95px;
+}
+
+.BestSellerDesc2 {
+    position: absolute;
+    word-wrap: break-word;
+    text-align: center;
+    border: 3px solid #FF9B9B;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    top: -13%;
+    left: 68.3%;
+    width: 250px;
+    height: 110px;
+}
+
+/* About */
+.about {
+    color: #5B5B5B;
+}
+.history {
+    font-size: 32px;
+    left: 50%;
+    text-align: center;
+}
+.h_desc {
+    position: absolute;
+    border: 5px solid rgba(0, 0, 0, 0.1);
+    width: 1500px;
+    padding: 20px;
+    height: fit-content;
+    top: 210px;
+    left: 10%;
+    font-size: 24px;
+}
+.visionmission {
+    font-size: 32px;
+    left: 50%;
+    text-align: center;
+}
+.v_text {
+    position: absolute;
+    top: 380px;
+    left: 47%;
+}
+.v_desc {
+    position: absolute;
+    border: 5px solid rgba(0, 0, 0, 0.1);
+    width: 1500px;
+    padding: 20px;
+    height: fit-content;
+    top: 450px;
+    left: 10%;
+    font-size: 24px;
+}
+.m_text {
+    position: absolute;
+    top: 570px;
+    left: 46.5%;
+}
+.m_desc {
+    position: absolute;
+    border: 5px solid rgba(0, 0, 0, 0.1);
+    width: 1500px;
+    padding: 20px;
+    height: fit-content;
+    top: 645px;
+    left: 10%;
+    font-size: 24px;
+}
+
+/* Product */
+.CategoryLinks {
+    position: absolute;
+    width: 1000px;
+    height: 50px;
+    font-size: 20px;
+    left: 10%;
+    top: 19%;
+}
+
+.CleanserLink {
+    margin-right: 5%;
+    color: white;
+    background-color: #ff5555;
+    border-radius: 30px;
+    padding: 10px 10px 10px 13px;
+    text-decoration: none;
+}
+
+.EOLink {
+    margin-right: 5%;
+    color: white;
+    background-color: #ff5555;
+    border-radius: 30px;
+    padding: 10px 10px 10px 13px;
+    text-decoration: none;
+}
+
+.FaceMaskLink {
+    margin-right: 5%;
+    color: white;
+    background-color: #ff5555;
+    border-radius: 30px;
+    padding: 10px 10px 10px 13px;
+    text-decoration: none;
+}
+
+.MoisturizerLink {
+    margin-right: 5%;
+    color: white;
+    background-color: #ff5555;
+    border-radius: 30px;
+    padding: 10px 10px 10px 15px;
+    text-decoration: none;
+}
+
+.SerumLink {
+    margin-right: 5%;
+    color: white;
+    background-color: #ff5555;
+    border-radius: 30px;
+    padding: 10px 13px 10px 13px;
+    text-decoration: none;
+}
+
+.ProductsDisplay {
+    position: absolute;
+    top: 32%;
+    left: 10%;
+    width: 60%;
+    height: 150%;
+}
+
+.ProductName {
+    font-size: 20px;
+    text-align: center;
+    color: #5B5B5B;
+    margin-top: -57.5%;
+}
+
+.ProductPrice {
+    font-size: 18px;
+    margin-top: 51%;
+    color: #5B5B5B;
+    margin-left: 4%;
+}
+
+.Category {
+    position: absolute;
+    top: -38%;
+    color: #FF7373;
+}
+
+.DisplayCleanser {
+    position: absolute;
+    background-color: #FAA4A4;
+    width: 275px;
+    height: 200px;
+}
+
+.DisplayEO {
+    position: absolute;
+    background-color: #FFD4D4;
+    top: 21%;
+    width: 275px;
+    height: 200px;
+}
+
+.DisplayFaceMask {
+    position: absolute;
+    background-color: #FAA4A4;
+    top: 42%;
+    width: 275px;
+    height: 200px;
+}
+
+.DisplayMoisturizer {
+    position: absolute;
+    background-color: #FFD4D4;
+    top: 63%;
+    width: 275px;
+    height: 200px;
+}
+
+.DisplaySerum {
+    position: absolute;
+    background-color: #FAA4A4;
+    top: 84%;
+    width: 275px;
+    height: 200px;
+}
+
+.CleanserImage {
+    width: 250px;
+    height: 125px;
+    margin-left: 4%;
+    margin-top: 13%;
+    object-fit: contain;
+    background-color: white;
+}
+
+.EOImage {
+    width: 250px;
+    height: 125px;
+    margin-left: 4%;
+    margin-top: 13%;
+    object-fit: contain;
+    background-color: white;
+}
+
+.FaceMaskImage {
+    width: 250px;
+    height: 125px;
+    margin-left: 4%;
+    margin-top: 13%;
+    object-fit: contain;
+    background-color: white;
+}
+
+.MoisturizerImage {
+    width: 250px;
+    height: 125px;
+    margin-left: 4%;
+    margin-top: 13%;
+    object-fit: contain;
+    background-color: white;
+}
+
+.SerumImage {
+    width: 250px;
+    height: 125px;
+    margin-left: 4%;
+    margin-top: 13%;
+    object-fit: contain;
+    background-color: white;
+}
+
+.ProductInfo {
+    position: absolute;
+    left: 85%;
+    top: 83.7%;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+}
+
+.CleanserOverlay {
+    position: absolute;
+    top: 18%;
+    opacity: 0;
+    width: 250px;
+    height: 125px;
+    margin-left: 4%;
+    transition: .5s ease;
+    background-color: #ff8d8d;
+}
+
+.CleanserInfo {
+    width: 240px;
+    height: 50px;
+    color: white;
+    font-size: 15px;
+    position: absolute;
+    top: 57%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.ProductInfo:hover ~ .CleanserOverlay{
+    opacity: 1;
+}
+
+.EOOverlay {
+    position: absolute;
+    top: 18%;
+    opacity: 0;
+    width: 250px;
+    height: 125px;
+    margin-left: 4%;
+    transition: .5s ease;
+    background-color: #ff8d8d;
+}
+
+.EOInfo {
+    width: 240px;
+    height: 50px;
+    color: white;
+    font-size: 15px;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.ProductInfo:hover ~ .EOOverlay{
+    opacity: 1;
+}
+
+.FaceMaskOverlay {
+    position: absolute;
+    top: 18%;
+    opacity: 0;
+    width: 250px;
+    height: 125px;
+    margin-left: 4%;
+    transition: .5s ease;
+    background-color: #ff8d8d;
+}
+
+.FaceMaskInfo {
+    width: 240px;
+    height: 100px;
+    color: white;
+    font-size: 15px;
+    position: absolute;
+    top: 48%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.ProductInfo:hover ~ .FaceMaskOverlay{
+    opacity: 1;
+}
+
+.MoisturizerOverlay {
+    position: absolute;
+    top: 18%;
+    opacity: 0;
+    width: 250px;
+    height: 125px;
+    margin-left: 4%;
+    transition: .5s ease;
+    background-color: #ff8d8d;
+}
+
+.MoisturizerInfo {
+    width: 240px;
+    height: 50px;
+    color: white;
+    font-size: 15px;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.ProductInfo:hover ~ .MoisturizerOverlay{
+    opacity: 1;
+}
+
+.SerumOverlay {
+    position: absolute;
+    top: 18%;
+    opacity: 0;
+    width: 250px;
+    height: 125px;
+    margin-left: 4%;
+    transition: .5s ease;
+    background-color: #ff8d8d;
+}
+
+.SerumInfo {
+    width: 240px;
+    height: 50px;
+    color: white;
+    font-size: 15px;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.ProductInfo:hover ~ .SerumOverlay{
+    opacity: 1;
+}
+
+/* Promotions */
+.essentialoil {
+    position: absolute;
+    width: 200px;
+    height: 70%;
+    left: 24.2%;
+    top: 142px;
+    background-color: #FFF4F4;
+    z-index: -5;
+    color: #5B5B5B;
+}
+.eo_name {
+    font-size: 25px;
+    text-align: center;
+}
+.eo_img {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    top: 100px;
+    background-color: #FFBEBE;
+}
+.eo_predisc {
+    position: absolute;
+    text-decoration: line-through 2px red;
+    left: 5%;
+    top: 320px;
+    margin-bottom: 5px;
+    font-size: 16px;
+}
+.eo_aftdisc {
+    position: absolute;
+    font-size: 24px;
+    margin-top: 5px;
+    top: 350px;
+    left: 25%;
+}
+.eo_bank {
+    position: absolute;
+    bottom: 50px;
+    width: 200px;
+}
+.facemask {
+    position: absolute;
+    width: 200px;
+    height: 70%;
+    left: 45%;
+    top: 142px;
+    background-color: #FFF4F4;
+    z-index: -5;
+    color: #5B5B5B;
+}
+.fm_name {
+    font-size: 25px;
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.fm_img {
+    position: absolute;
+    width: 200px;
+    top: 100px;
+    background-color: #FFBEBE;
+}
+.fm_predisc {
+    position: absolute;
+    text-decoration: line-through 2px red;
+    left: 5%;
+    top: 320px;
+    margin-bottom: 5px;
+    font-size: 16px;
+}
+.fm_aftdisc {
+    position: absolute;
+    font-size: 24px;
+    margin-top: 5px;
+    top: 350px;
+    left: 25%;
+}
+.fm_bank {
+    position: absolute;
+    left: 30px;
+    bottom: 120px;
+    width: 150px;
+}
+.serum {
+    position: absolute;
+    width: 200px;
+    height: 70%;
+    left: 65.8%;
+    top: 142px;
+    background-color: #FFF4F4;
+    z-index: -5;
+    color: #5B5B5B;
+}
+.s_name {
+    font-size: 25px;
+    text-align: center;
+}
+.s_img {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    top: 100px;
+    background-color: #FFBEBE;
+}
+.s_predisc {
+    position: absolute;
+    text-decoration: line-through 2px red;
+    left: 5%;
+    top: 320px;
+    margin-bottom: 5px;
+    font-size: 16px;
+}
+.s_aftdisc {
+    position: absolute;
+    font-size: 24px;
+    margin-top: 5px;
+    top: 350px;
+    left: 25%;
+}
+.s_bank {
+    position: absolute;
+    bottom: 50px;
+    width: 200px;
+}
+.cleanser {
+    position: absolute;
+    width: 200px;
+    height: 70%;
+    left: 34.6%;
+    top: 142px;
+    background-color: white;
+    z-index: -5;
+    color: #5B5B5B;
+}
+.c_name {
+    font-size: 25px;
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.c_img {
+    position: absolute;
+    object-fit: contain;
+    width: 200px;
+    height: 200px;
+    top: 100px;
+    background-color: #FFD4D4;
+}
+.c_predisc {
+    position: absolute;
+    text-decoration: line-through 2px red;
+    left: 5%;
+    top: 320px;
+    margin-bottom: 5px;
+    font-size: 16px;
+}
+.c_aftdisc {
+    position: absolute;
+    font-size: 24px;
+    margin-top: 5px;
+    top: 350px;
+    left: 25%;
+}
+.c_bank {
+    position: absolute;
+    left: 30px;
+    bottom: 120px;
+    width: 150px;
+}
+.moisturizer {
+    position: absolute;
+    width: 200px;
+    height: 70%;
+    left: 55.4%;
+    top: 142px;
+    background-color: white;
+    z-index: -5;
+    color: #5B5B5B;
+}
+.m_name {
+    font-size: 25px;
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.m_img {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    top: 100px;
+    background-color: #FFD4D4;
+}
+.m_predisc {
+    position: absolute;
+    text-decoration: line-through 2px red;
+    left: 5%;
+    top: 320px;
+    margin-bottom: 5px;
+    font-size: 16px;
+}
+.m_aftdisc {
+    position: absolute;
+    font-size: 24px;
+    margin-top: 5px;
+    top: 350px;
+    left: 25%;
+}
+.m_bank {
+    position: absolute;
+    bottom: 50px;
+    width: 200px;
+}
+
+/* Subscribe */
+.subscribe {
+    font-size: 25px;
+    color: #5B5B5B;
+}
+.sub_text {
+    margin-left: 202px;
+    margin-top: 60px;
+}
+.first_name {
+    position: absolute;
+    left: 10%;
+    top: 28%;
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    padding: 10px;
+    font-size: 25px;
+}
+.last_name {
+    position: absolute;
+    left: 28%;
+    top: 28%;
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    padding: 10px;
+    font-size: 25px;
+}
+.email {
+    position: absolute;
+    left: 10%;
+    top: 39%;
+    display: flex;
+    flex-direction: column;
+    width: 596px;
+    padding: 10px;
+    font-size: 25px;
+}
+.phone {
+    position: absolute;
+    left: 10%;
+    top: 50%;
+    display: flex;
+    flex-direction: column;
+    width: 596px;
+    padding: 10px;
+    font-size: 25px;
+}
+.prefer {
+    position: absolute;
+    left: 60%;
+    top: 22%;
+    margin: 30px;
+}
+.newsletter {
+    position: absolute;
+    top: 64%;
+    left: 10.2%;
+}
+.sub_button {
+    position: absolute;
+    top: 72%;
+    left: 10.3%;
+    background-color: #FF7373;
+    color: white;
+    padding: 10px;
+    width: 120px;
+    height: 50px;
+    font-size: 20px;
+    letter-spacing: 0.7px;
+    border: none;
+}
+
+.sub_button:hover {
+    background-color: #ff9191;
+}
+
+a {
+    text-decoration: none;
+}
+
+.FN {
+    height: 20px;
+    font-size: 20px;
+    padding: 10px;
+    margin-top: 5px;
+}
+
+.LN {
+    height: 20px;
+    font-size: 20px;
+    padding: 10px;
+    margin-top: 5px;
+}
+
+.E {
+    height: 20px;
+    font-size: 20px;
+    padding: 10px;
+    margin-top: 5px;
+}
+
+.P {
+    height: 20px;
+    font-size: 20px;
+    padding: 10px;
+    margin-top: 5px;
+}
+
+.box {
+    width: 15px;
+    height: 15px;
+}
+
+/* Footer */
+.footer {
+    background-color: #FAA4A4;
+    color: white;
+    position: absolute;
+    width: 100%;
+    height: 150px;
+    bottom: 0%;
+    margin-top: -200px;
+    margin: 0%;
+}
+.ft_1 {
+    position: absolute;
+    width: 400px;
+    height: 100px;
+    left: 100px;
+    top: 10px;
+    font-size: 20px;
+}
+.information {
+    padding: 0;
+}
+.information li {
+    display: block;
+    list-style-type: none;
+    padding-bottom: 20px;
+    margin-top: -5px;
+}
+.information a {
+    text-decoration: none;
+    color: white;
+}
+.information li :hover {
+    color: gray;
+}
+.ft_2 {
+    position: absolute;
+    width: 400px;
+    height: 100px;
+    left: 800px;
+    top: 10px;
+    font-size: 20px;
+}
+.contact {
+    line-height: 28px;
+}
+.contact {
+    color: white;
+    text-decoration: none;
+    margin-top: -5px;
+}
+.ig_logo {
+    position: absolute;
+    right: 350px;
+    top: 50px;
+    width: 60px;
+}
+
+.twit_logo {
+    position: absolute;
+    right: 225px;
+    top: 50px;
+    width: 60px;
+}
+
+.fb_logo {
+    position: absolute;
+    right: 100px;
+    top: 50px;
+    width: 60px;
+}
+.footerProductPage {
+    background-color: #FF9B9B;
+    color: white;
+    position: absolute;
+    width: 100%;
+    height: 150px;
+    bottom: -110%;
+    margin: 0%;
+    overflow-x: hi;
+} 
+
+/* responsive */
+@media only screen and (max-width: 800px) {
+    .Header {
+        position: inherit;
+        box-sizing: border-box;
+        width: 100%;
+        height: 170px;
+        position: sticky;
+    }
+    h1.BrandTitle {
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+    }
+    a.Home {
+        text-align: center;
+        display: flex;
+        left: 50px;
+    }
+    a.Home::after {
+        display: none;
+    }
+    a.Home:hover::after {
+        display: none;
+    }
+    a.About {
+        text-align: center;
+        display: flex;
+        left: 180px;
+    }
+    a.About::after {
+        display: none;
+    }
+    a.About:hover::after {
+       display: none;
+    }
+    a.Product {
+        text-align: center;
+        display: flex;
+        left: 310px;
+    }
+    a.Product::after {
+        display: none;
+    }
+    a.Product:hover::after {
+        display: none;
+    }
+    a.Promotion {
+        text-align: center;
+        display: flex;
+        left: 470px;
+    }
+    a.Promotion::after {
+        display: none;
+    }  
+    a.Promotion:hover::after {
+        display: none;
+    }
+    a.Subscribe {
+        text-align: center;
+        display: flex;
+        left: 650px;
+    }
+    a.Subscribe::after {
+        display: none;
+    }
+    a.Subscribe:hover::after {
+        display: none;
+    }
+    .Banner {
+        display: flex;
+        position: inherit;
+    }
+    .LatestProductText {
+        position: inherit;
+        display: flex;
+        justify-content: center;
+        margin-top: 50px;
+    }
+    .LatestProductContainer {
+        position: inherit;
+        margin-left: 25px;
+    }
+    .LatestProductCleanserContainer {
+        display: none;
+    }
+    .LatestProductCleanser {
+        display: none;
+    }
+    .BestSellerText {
+        position: inherit;
+        display: flex;
+        justify-content: center;
+        margin-top: 50px;
+    }
+    .BestSellerContainer {
+        display: flex;
+        position: absolute;
+        top: 750px;
+        left: 150px;
+    }
+    .BestSellers {
+        position: initial;
+        margin-top: 50px;
+    }
+    .BestSellerDesc1 {
+        top: 33px;
+    }
+
+    .h_desc {
+        width: 600px;
+    }
+    .v_text {
+        top: 450px;
+    }
+    .v_desc {
+        width: 600px;
+        top: 500px;
+    }
+    .m_text {
+        top: 630px;
+    }
+    .m_desc {
+        width: 600px;
+        top: 700px;
+    }
+
+
+
+    .essentialoil {
+        height: 60%;
+        left: 0%;
+    }
+    .eo_bank {
+        bottom: 0%;
+    }
+    .facemask {
+        position: absolute;
+        width: 200px;
+        height: 60%;
+        left: 50%;
+    }
+    .fm_bank {
+        bottom: 15%;
+    }
+    .serum {
+        position: absolute;
+        width: 200px;
+        height: 60%;
+        left: 0%;
+        top: 75%;
+    }
+    .s_bank {
+        position: absolute;
+        bottom: 0%;
+    }
+    .cleanser {
+        height: 60%;
+        left: 25%;
+    }
+    .c_bank {
+        bottom: 15%;
+    }
+    .moisturizer {
+        height: 60%;
+        left: 75%;
+    }
+    .m_bank {
+        bottom: 0%;
+    }
+}
